@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Kyla Morcillos</title>
+	    <style>
+	        body {
+	            font-family: Arial, sans-serif;
+	            max-width: 800px;
+	            margin: auto;
+	            display: flex;
+	            justify-content: center;
+	            align-items: center;
+	            min-height: 100vh;
+	        }
+	
+	        .container {
+	            max-width: 800px;
+	            background: white;
+	            padding: 20px;
+	            border-radius: 10px;
+	            text-align: center;
+	        }
+	
+	        nav {
+	            margin-top: 16px;
+	            margin-bottom: 24px;
+	        }
+	
+	        h1, h2 {
+	            margin: 0;
+	        }
+	
+	        h2 {
+	            margin-bottom: 16px;
+	        }
+	
+	        table, th, td {
+	            border: 1px solid white;
+	            border-collapse: collapse;
+	            padding: 8px;
+	        }
+	
+	        #description {
+	            margin-top: 12px;
+	            margin-bottom: 12px;
+	        }
+	
+	        .site-page {
+	            width: 800px;
+	            max-width: 30rem;
+	            height: 400px;
+	            margin: 0 auto;
+	            margin-bottom: 12px;
+	            overflow-y: auto;
+	            padding: 1rem 1.25rem 1rem 1rem;
+	            position: relative;
+	            background-color: rgb(0 0 0 / 1);
+	            color: rgb(255 255 255 / 1);
+	            box-shadow: inset 0 0 0 1px #000,inset 0 0 0 3px #fff;
+	            box-sizing: border-box;
+	            border-width: 0;
+	            border-style: solid;
+	            border-color: #ccc;
+	            display: none;
+	            scrollbar-width: thin;
+	            scrollbar-color: transparent transparent;
+	        }
+	
+	        .site-page:target {
+	            display: block;
+	        }
+	
+	        /* Hide scrollbar for Chrome, Edge, and Safari */
+	        .site-page::-webkit-scrollbar {
+	            width: 5px; /* Make it very thin */
+	        }
+	
+	        .site-page::-webkit-scrollbar-thumb {
+	            background-color: rgba(255, 255, 255, 0.2); /* Make it nearly transparent */
+	            border-radius: 10px;
+	        }
+	
+	        .site-page::-webkit-scrollbar-track {
+	            background: transparent; /* Hide the scrollbar track */
+	        }
+	
+	        .nav-item {
+	            margin: 0 auto;
+	            overflow: hidden;
+	            position: relative;
+	            background-color: rgb(0 0 0 / 1);
+	            color: rgb(255 255 255 / 1);
+	            box-shadow: inset 0 0 0 1px #000,inset 0 0 0 3px #fff;
+	            box-sizing: border-box;
+	            border-width: 0;
+	            border-style: solid;
+	            border-color: #ccc;
+	            padding: 10px 15px;
+	            cursor: pointer;
+	            font-size: x-small;
+	            text-decoration: none;
+	        }
+	
+	        .content {
+	            text-align: left;
+	        }
+	
+	        .title-content {
+	            text-align: center;
+	        }
+	
+	        .text-content {
+	            font-size: smaller;
+	            list-style: none;
+	        }
+	
+	        ul.text-content {
+	            padding-left: 0;
+	        }
+	
+	        .footer {
+	            text-align: center;
+	        }
+	
+	        .social-icons a img {
+	            width: 30px;
+	            height: 30px;
+	            margin: 0 5px;
+	            filter: grayscale(100%);
+	        }
+	
+	        .social-icons a {
+	            text-decoration: none;
+	            outline: none;
+	        }
+	
+	    </style>
+	</head>
+	<body>
+	    <div class="container">
+	        <header>
+	            <h1 id="title">Kyla Morcillos</h1>
+	            <p id="description">BS Computer Science Student | Web Developer</p>
+	        </header>
+	
+	        <nav>
+	            <a href="#about" class="nav-item">ABOUT</a>
+	            <a href="#changelogs" class="nav-item">CHANGELOGS</a>
+	            <a href="#projects" class="nav-item">PROJECTS</a>
+	            <a href="#skills" class="nav-item">SKILLS</a>
+	        </nav>
+	
+	        <main>
+	            <section class="site-content">
+	                <div id="about" class="content site-page">
+	                    <h2 class="title-content">About Me</h2>
+	                    <p class="text-content">I'm Kyla, a 3rd-year BSCS student who loves learning something new every day—whether it's about making my code cleaner and more efficient or a cool keyboard shortcut I wish I had known sooner. I enjoy planning and building personal projects (whether I finish them is another story) and like keeping up my GitHub daily streak by coding and committing every day. When I&#39m not coding, you&#39ll probably find me playing games, binge-watching an entire anime season in a day, annoying my cats until they scratch me, or screaming over the appearance of handsome characters in the manhwas I'm reading.</p>
+	
+	                    <h2 class="title-content">Interests</h2>
+	                    <ul class="text-content">
+	                        <li>🛠️ <strong>Specialty:</strong> Frontend Development</li>
+	                        <li>📦 <strong>Favorite Language:</strong> JavaScript/TypeScript</li>
+	                        <li>🚀 <strong>Favorite Framework:</strong> React</li>
+	                        <li>🎮 <strong>Favorite Game:</strong> Visual Novels</li>
+	                        <li>😸 <strong>Favorite Animal:</strong> Cats</li>
+	                        <li>🛠️ <strong>Go-To Debugging Strategy:</strong> Google → Stack Overflow → AI → Trial & Error → Crying → Eureka!</li>
+	                        <li>🚨 <strong>Biggest Debugging Moment:</strong> When I realized I used the wrong variable name</li>
+	                        <li>💬 <strong>Most Used Programming Quote:</strong> “It works on my machine.”</li>
+	                        <li>💢 <strong>Most Hated Bug:</strong> CORS policy</li>
+	                        <li>🔍 <strong>Most Used Google Search:</strong> How to center a div</li>
+	                        <li>🌟 <strong>Biggest Win:</strong> When my code works on the first try (rare event)</li>
+	                        <li>🌤️ <strong>Life Motto:</strong> Don't put off something you can do in 10 seconds.</li>
+	                        <li>🎯 <strong>Dream Goal:</strong> To be an Indie Game Developer</li>
+	                    </ul>
+	                </div>
+	
+	                <div id="changelogs" class="content site-page">
+	                    <h2 class="title-content">Changelogs</h2>
+	                    <div class="text-content">
+	                        <h3>v17.1 (2021)</h3>
+	                        <ul>
+	                            <li>Learn Python basics</li>
+	                        </ul>
+	
+	                        <h3>v18.1 (2022)</h3>
+	                        <ul>
+	                            <li>Learn Introduction to C</li>
+	                            <li>Learn basic Terminal commands</li>
+	                        </ul>
+	
+	                        <h3>v19.1 (2023)</h3>
+	                        <ul>
+	                            <li>Learn basic Discord bot development (discord.py)</li>
+	                        </ul>
+	
+	                        <h3>v19.3 (2023)</h3>
+	                        <ul>
+	                            <li>Learn Introduction to Java</li>
+	                            <li>Learn Introduction to OOP</li>
+	                            <li>Learn Java Swing</li>
+	                            <li>Learn Introduction to DSA</li>
+	                        </ul>
+	
+	                        <h3>v20.1 (2024)</h3>
+	                        <ul>
+	                            <li>Learn Introduction to Operating Systems</li>
+	                            <li>Learn Networking basics</li>
+	                            <li>Learn Packet Tracer basics</li>
+	                            <li>Learn Software Development Life Cycle</li>
+	                            <li>Learn SQL, Normalization, and ERD</li>
+	                            <li>Learn Technical Documentation</li>
+	                            <li>Learn Design and Analysis of Algorithms</li>
+	                            <li>Develop a prototype delivery routing system (DeliverEase)</li>
+	                        </ul>
+	
+	                        <h3>v20.6 (2024)</h3>
+	                        <ul>
+	                            <li>Learn Git</li>
+	                            <li>Learn Linux</li>
+	                            <li>Learn HTML and CSS</li>
+	                            <li>Learn CSS Frameworks</li>
+	                            <li>Learn JavaScript</li>
+	                        </ul>
+	
+	                        <h3>v20.11 (2024)</h3>
+	                        <ul>
+	                            <li>Learn React</li>
+	                            <li>Learn Typescript</li>
+	                            <li>Learn Firebase</li>
+	                        </ul>
+	
+	                        <h3>v21.1 (2025)</h3>
+	                        <ul>
+	                            <li>Develop a student concern management system (CCIS Concern Hub)</li>
+	                            <li>Learn C# and ASP.NET basics</li>
+	                            <li>Learn Advanced OOP</li>
+	                            <li>Learn Tmux (terminal multiplexer)</li>
+	                        </ul>
+	
+	                        <h3>v21.2 (2025)</h3>
+	                        <ul>
+	                            <li>Learn Bash scripting</li>
+	                            <li>Develop a Pomodoro timer written in Bash (PomoBash)</li>
+	                        </ul>
+	
+	                        <h3>v21.3 (2025)</h3>
+	                        <ul>
+	                            <li>Learn Machine Learning (Regression)</li>
+	                            <li>Learn Next.js</li>
+	                        </ul>
+	                    </div>
+	                </div>
+	
+	                <div id="projects" class="content site-page">
+	                    <h2 class="title-content">Projects</h2>
+	                    <div class="text-content">
+	                        <h3 style="font-size: larger">DeliverEase</h3>
+	                        <ul>
+	                            <li>A prototype delivery routing system that streamlines order tracking and logistics.</li>
+	                            <li>Skills: HTML, CSS, JavaScript, Overpass API, Google Maps API</li>
+	                            <li><a href="https://github.com/AkzechKyla/DeliverEase">GitHub Repo</a> | <a href="https://akzechkyla.github.io/DeliverEase/">Live Demo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">CCIS Concern Hub</h3>
+	                        <ul>
+	                            <li>A student concern management system for dedicated to PUP CCIS department.</li>
+	                            <li>Skills: Firebase, React, TailwindCSS</li>
+	                            <li><a href="https://github.com/AkzechKyla/CCISConcernHub">GitHub Repo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">PomoBash</h3>
+	                        <ul>
+	                            <li>A simple Pomodoro timer written in Bash for improved focus and productivity.</li>
+	                            <li>Skills: Bash Scripting</li>
+	                            <li><a href="https://github.com/AkzechKyla/PomoBash">GitHub Repo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">CV Application Maker</h3>
+	                        <ul>
+	                            <li>A web app that helps users generate a professional CV.</li>
+	                            <li>Skills: React, TailwindCSS, TypeScript</li>
+	                            <li><a href="https://github.com/AkzechKyla/CVApplicationMaker">GitHub Repo</a> | <a href="https://akzechkyla.github.io/CVApplicationMaker/">Live Demo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">YouTube Clone</h3>
+	                        <ul>
+	                            <li>A front-end clone of YouTube.</li>
+	                            <li>Skills: HTML, CSS</li>
+	                            <li><a href="https://github.com/AkzechKyla/YouTubeClone">GitHub Repo</a> | <a href="https://akzechkyla.github.io/YouTubeClone/">Live Demo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">Amazon Clone</h3>
+	                        <ul>
+	                            <li>A functional e-commerce website clone of Amazon.</li>
+	                            <li>Skills: HTML, CSS, JavaScript</li>
+	                            <li><a href="https://github.com/AkzechKyla/AmazonClone">GitHub Repo</a> | <a href="https://akzechkyla.github.io/AmazonClone/">Live Demo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">Rock, Paper, Scissors</h3>
+	                        <ul>
+	                            <li>A cat-themed Rock, Paper, Scissors game playable in the browser.</li>
+	                            <li>Skills: JavaScript, HTML, CSS</li>
+	                            <li><a href="https://github.com/AkzechKyla/RockPaperScissorsGame">GitHub Repo</a> | <a href="https://akzechkyla.github.io/RockPaperScissorsGame/">Live Demo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">Shikanoko Memory Game</h3>
+	                        <ul>
+	                            <li>A memory card-matching game featuring Shikanoko Nokonoko Koshitantan (anime).</li>
+	                            <li>Skills: JavaScript, CSS, HTML</li>
+	                            <li><a href="https://github.com/AkzechKyla/ShikanokoMemoryGame">GitHub Repo</a> | <a href="https://akzechkyla.github.io/ShikanokoMemoryGame/">Live Demo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">Fun Run Registration</h3>
+	                        <ul>
+	                            <li>A registration system for managing participants in a fun run event.</li>
+	                            <li>Skills: C#, ASP.NET Core MVC, Entity Framework, Bootstrap, Visual Studio Community, ADO.NET, SQL Server</li>
+	                            <li><a href="https://github.com/AkzechKyla/CSharpSimpleCRUD">GitHub Repo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">Snake Data Collection</h3>
+	                        <ul>
+	                            <li>A dataset collection tool for Philippine snake species classification.</li>
+	                            <li>Skills: Python, Web Scraping, iNaturalist API</li>
+	                            <li><a href="https://github.com/AkzechKyla/SnakeDataCollection">GitHub Repo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">C Codes</h3>
+	                        <ul>
+	                            <li>Various C programming projects and exercises.</li>
+	                            <li><a href="https://github.com/AkzechKyla/C">GitHub Repo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">Java Codes</h3>
+	                        <ul>
+	                            <li>Java programs and practice projects.</li>
+	                            <li><a href="https://github.com/AkzechKyla/Java">GitHub Repo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">HTML CSS Codes</h3>
+	                        <ul>
+	                            <li>Frontend snippets and mini-projects using HTML and CSS.</li>
+	                            <li><a href="https://github.com/AkzechKyla/HTML-CSS-Practice">GitHub Repo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">JavaScript Codes</h3>
+	                        <ul>
+	                            <li>Various JavaScript projects and small interactive features.</li>
+	                            <li><a href="https://github.com/AkzechKyla/JavaScript">GitHub Repo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">Python Codes</h3>
+	                        <ul>
+	                            <li>General-purpose Python scripts.</li>
+	                            <li><a href="https://github.com/AkzechKyla/Python">GitHub Repo</a></li>
+	                        </ul>
+	
+	                        <h3 style="font-size: larger">Machine Learning</h3>
+	                        <ul>
+	                            <li>Projects exploring machine learning.</li>
+	                            <li><a href="https://github.com/AkzechKyla/ML">GitHub Repo</a></li>
+	                        </ul>
+	                    </div>
+	                </div>
+	
+	
+	                <div id="skills" class="content site-page">
+	                    <h2 class="title-content">Skills</h2>
+	                    <table class="text-content">
+	                        <tr>
+	                            <th>Category</th>
+	                            <th>Skills</th>
+	                        </tr>
+	                        <tr>
+	                            <td>Languages</td>
+	                            <td>C, C#, Python, Java, HTML, CSS, JavaScript, TypeScript, Shell</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Frameworks & Libraries</td>
+	                            <td>React.js, ASP.NET, TailwindCSS</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Databases</td>
+	                            <td>SQL, Firebase</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Version Control & Collaboration</td>
+	                            <td>Git, GitHub</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Operating Systems & Tools</td>
+	                            <td>Linux, Tmux, Bash Scripting</td>
+	                        </tr>
+	                        <tr>
+	                            <td>IDEs</td>
+	                            <td>Visual Studio Code, Sublime Text</td>
+	                        </tr>
+	                        <tr>
+	                            <td>Development & Documentation</td>
+	                            <td>Jupyter Notebook, Markdown</td>
+	                        </tr>
+	                    </table>
+	                </div>
+	            </section>
+	        </main>
+	
+	        <footer id="contact" class="footer">
+	            <div class="social-icons">
+	                <a href="https://www.facebook.com/akzechkyla.7" target="_blank">
+	                    <img src="https://img.icons8.com/?size=100&id=118467&format=png&color=000000" alt="Facebook">
+	                </a>
+	                <a href="https://discord.com/users/637931483218051102" target="_blank">
+	                    <img src="https://img.icons8.com/?size=100&id=30888&format=png&color=000000" alt="Discord">
+	                </a>
+	                <a href="https://github.com/AkzechKyla" target="_blank">
+	                    <img src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" alt="GitHub">
+	                </a>
+	            </div>
+	        </footer>
+	    </div>
+	</body>
+</html>
